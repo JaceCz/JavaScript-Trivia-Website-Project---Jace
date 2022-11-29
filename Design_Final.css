@@ -133,7 +133,8 @@ img {
 .welcome-image {
    
     padding: 0rem 10rem;
-    height: 40vh;
+    width: 92%;
+    height: 78vh; 
     object-fit: cover;
   }
 
