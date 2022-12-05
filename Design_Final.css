@@ -1,5 +1,7 @@
 /* Defining the page foundations */
 
+@import url(//db.onlinewebfonts.com/c/97c4b25dc74e0ab045154e75a8fdd69d?family=Game+of+Thrones);
+
 html {
     font-size: 60%;
     box-sizing: border-box;
@@ -41,7 +43,7 @@ html {
   /* Defining Body elements */
 
 body {
-    font-family: 'Open Sans', sans-serif;
+    font-family: 'Zen Dots', cursive;
     line-height: 1.3;
     margin: 0px;
     padding: 0px;
@@ -50,7 +52,7 @@ body {
 }
 
 h1, h2 {
-  font-family: sans-serif;
+  font-family: 'Zen Dots';
   font-weight: 350;
   text-align: center;
 }
@@ -63,8 +65,15 @@ h2 {
   font-size: 4.2rem;
 }
 
+li {
+  font-size: 3rem;
+  text-align: center;
+  margin: 12px 0;
+}
+
 ul {
   list-style: none;
+  font-family: "Game of Thrones", cursive;
 }
 
 a {
@@ -144,11 +153,14 @@ img {
     justify-content: center;
     align-items: center;
     width: 100%;
-    height: 100vh;
+    height: 150vh;
     background-color: var(--main-graywhite);
     background-image: linear-gradient(62deg, var(--main-graywhite) 0%, var(--main-gray) 100%);
   }
-  
+
+  .welcome-section > h1 {
+    font-family: "Game of Thrones", cursive;
+  }  
   .welcome-section > p {
     padding: 0rem 10rem;
     text-align: center;
@@ -212,6 +224,99 @@ img {
       font-size: 4rem;
     }
   }
+
+   /* Defining the Trivia section */
+
+
+
+.choice-container {
+    display: flex;
+    margin-bottom: 0.8rem;
+    width: 100%;
+    border-radius: 4px;
+    background: rgb(96, 67, 114);
+    font-size: 3rem;
+    min-width: 80rem;
+}
+
+
+.images {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0.8rem;
+    width: 10%;
+    border-radius: 4px;
+    min-width: 8rem;
+}
+
+.choice-container:hover {
+    cursor: pointer;
+    box-shadow: 0 0.4rem 1.4rem 0, rgba(6, 103, 247, 0.5);
+    transform: scale(1.02);
+    transform: transform 100ms;
+}
+
+.choice-prefix {
+    padding: 2rem 2.5rem;
+    color: aliceblue;
+}
+
+.choice-text {
+    padding: 2rem;
+    width: 100%;
+    color: aliceblue;
+    letter-spacing: 0.1em;
+}
+
+.correct {
+    background: linear-gradient(32deg, rgb(12, 249, 39) 0%, 
+    rgb(41, 232, 111) 100%);
+}
+
+.incorrect {
+    background: linear-gradient(32deg, rgb(216, 18, 18) 0%, 
+    rgb(224, 11, 11, 1) 100%);
+}
+
+/* Heads up display */
+#hud {
+    display: flex;
+    justify-content: space-between;
+    color: black;
+}
+
+.hud-prefix {
+    text-align: center;
+    font-size: 2rem;
+}
+
+.hud-main-text {
+    text-align: center;;
+}
+
+#progressBar {
+    width: 20rem;
+    height: 3rem;
+    border: 0.2rem solid rgb(206, 158, 28);
+    margin-top: 2rem;
+    border-radius: 50px;
+    overflow: hidden;
+}
+
+#progressBarFull {
+    height: 100%;
+    background: rgb(206, 158, 28);
+    width: 0%;
+}
+
+
+@media screen and (max-width: 768px) {
+    .choice-container {
+        min-width: 40rem;
+    }
+
+}
 
 /* "Automagic" image grid using no media queries */
 
@@ -325,6 +430,7 @@ img {
     transform: translateY(8px);
   }
   
+  
   /* Defining the Footer elements */
   
   footer {
@@ -333,7 +439,7 @@ img {
     justify-content: space-evenly;
     padding: 2rem;
     background: var(--main-black);
-    border-top: 4px solid var(--main-graywhite);
+    border-top: 0px solid var(--main-graywhite);
   }
 
   .footers-section {
