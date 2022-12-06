@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Quiz of Thrones - Who will pass the thrones?</title>
+    <link rel="stylesheet" href="Design_Final.css">
+    <link rel="stylesheet" href="quiz.css">
+</head>
+<body>
+  <nav id="navbar" class="nav"> 
+      <ul class="nav-list">
+          <li>
+              <a href="Project_Final.html">Welcome</a>
+          </li>
+          <li>
+              <a href="quiz.html">The Quiz of Thrones</a>
+          </li>
+          <li>
+              <a href="About.html">About Me</a>
+          </li>
+      </ul>
+  </nav>
+  <!-- START Trivia SECTION -->
+  <div class="container">
+    <div id="trivia" class="justify-center flex-column">
+        <div id="scoreBoard">
+            <div class="scoreBoard-item">
+                <p id="voyageDisplay" class="scoreBoard-prefix">
+                    Question
+                </p>
+                <div id="voyageBar">
+                    <div id="voyageBarPointer"></div>
+                </div>
+            </div>
+            <div class="scoreBoard-item">
+                <p class="scoreBoard-prefix">
+                    Thrones
+                </p>
+                <h1 class="scoreBoard-main-text" id="score">
+                    0
+                </h1>
+            </div>
+        </div>
+        <h1 id="question">What is the answer?</h1>
+        <div class="option-container">
+            <p class="option-listing">A</p>
+            <p class="option-text" data-number="1">Option 1</p>
+        </div>
+        <div class="option-container">
+            <p class="option-listing">B</p>
+            <p class="option-text" data-number="2">Option 2</p>
+        </div>
+        <div class="option-container">
+            <p class="option-listing">C</p>
+            <p class="option-text" data-number="3">Option 3</p>
+        </div>
+        <div class="option-container">
+            <p class="option-listing">D</p>
+            <p class="option-text" data-number="4">Option 4</p>
+        </div>
+    </div>
+</div>
+<script src="quiz.js"></script>
+</body>
+</html>

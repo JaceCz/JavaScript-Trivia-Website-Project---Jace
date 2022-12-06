@@ -225,16 +225,16 @@ img {
     }
   }
 
-   /* Defining the Trivia section */
+   /* Defining the Quiz section */
 
-
-
-.choice-container {
+.option-container {
     display: flex;
     margin-bottom: 0.8rem;
     width: 100%;
     border-radius: 4px;
-    background: rgb(96, 67, 114);
+    background: linear-gradient(90deg, rgb(54, 79, 62) 0%,
+    rgb(35, 41, 52) 100%);
+    box-shadow: 0 0.1rem 1.4rem 0 rgba(166, 179, 185, 0.5);
     font-size: 3rem;
     min-width: 80rem;
 }
@@ -250,19 +250,19 @@ img {
     min-width: 8rem;
 }
 
-.choice-container:hover {
+.option-container:hover {
     cursor: pointer;
     box-shadow: 0 0.4rem 1.4rem 0, rgba(6, 103, 247, 0.5);
     transform: scale(1.02);
     transform: transform 100ms;
 }
 
-.choice-prefix {
+.option-listing {
     padding: 2rem 2.5rem;
     color: aliceblue;
 }
 
-.choice-text {
+.option-text {
     padding: 2rem;
     width: 100%;
     color: aliceblue;
@@ -279,34 +279,35 @@ img {
     rgb(224, 11, 11, 1) 100%);
 }
 
-/* Heads up display */
-#hud {
+/* Score Board display */
+#scoreBoard {
     display: flex;
     justify-content: space-between;
     color: black;
 }
 
-.hud-prefix {
+.scoreBoard-prefix {
     text-align: center;
     font-size: 2rem;
 }
 
-.hud-main-text {
+.scoreBoard-main-text {
     text-align: center;;
 }
 
-#progressBar {
+#voyageBar {
     width: 20rem;
     height: 3rem;
-    border: 0.2rem solid rgb(206, 158, 28);
+    border: 0.2rem solid rgb(54, 47, 27);
     margin-top: 2rem;
     border-radius: 50px;
     overflow: hidden;
 }
 
-#progressBarFull {
+#voyageBarPointer {
     height: 100%;
-    background: rgb(206, 158, 28);
+    background: linear-gradient(90deg, rgb(79, 54, 77) 0%,
+    rgb(35, 41, 52) 100%);
     width: 0%;
 }
 
